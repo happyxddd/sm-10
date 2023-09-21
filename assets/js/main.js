@@ -35,7 +35,7 @@ form.addEventListener('submit', function(event){
 
     if(bullFunction_one = true && bullFunction_two == true){
         let difference = 2023 - Number(inputDate.value)
-        if (difference < 18){
+        if (Math.abs(difference) < 18){
             answer.innerHTML = `
             <h3 class="answer">Вам меньше 18 лет</h3>
             `
